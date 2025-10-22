@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Application Form</title>
+</head>
+<body>
+    <h2>Job Application Form</h2>
+     
+    <form action="submit_job.html" method="post" enctype="multipart/form-data">
+        <!-- Name -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- Age -->
+        <label for="age">Age (18-60):</label>
+        <input type="number" id="age" name="age" min="18" max="60" required><br><br>
+
+        <!-- Phone Number -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" 
+               pattern="[0-9]{10}" 
+               placeholder="10 digit number" required><br><br>
+
+        <!-- Resume Upload -->
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br><br>
+
+        <!-- Portfolio -->
+        <label for="portfolio">Portfolio URL:</label>
+        <input type="url" id="portfolio" name="portfolio"><br><br>
+
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Interview Time -->
+        <label for="interview">Preferred Interview Time:</label>
+        <input type="time" id="interview" name="interview"><br><br>
+
+        <!-- Favorite Color -->
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color"><br><br>
+
+        <!-- Submit & Reset -->
+        <input type="submit" value="Submit Application">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

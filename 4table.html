@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiplication Table</title>
+</head>
+<body style="font-family: Arial;">
+
+  <h2>Multiplication Table Generator</h2>
+
+  <label>Enter Table Number:</label>
+  <input type="number" id="tableNum"><br><br>
+
+  <label>Enter Row Number:</label>
+  <input type="number" id="rowNum"><br><br>
+
+  <button onclick="generateTable()">Generate</button>
+
+  <h3>Output:</h3>
+  <pre id="result"></pre>
+
+  <script>
+    function generateTable() {
+      let table = document.getElementById("tableNum").value;
+      let rows = document.getElementById("rowNum").value;
+      let output = "";
+
+      for (let i = 1; i <= rows; i++) {
+        output += i + " * " + table + " = " + (i * table) + "\n";
+      }
+
+      document.getElementById("result").textContent = output;
+    }
+  </script>
+
+</body>
+</html>

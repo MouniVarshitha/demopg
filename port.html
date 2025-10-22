@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Portfolio</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #f8fafc;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background: rgba(15, 23, 42, 0.9);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav h1 {
+      font-size: 24px;
+      color: #38bdf8;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-left: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #f8fafc;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #38bdf8;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 0 20px;
+      background: linear-gradient(135deg, #1e293b, #0f172a);
+    }
+
+    .hero h2 {
+      font-size: 50px;
+      animation: slideDown 1s ease-in-out;
+    }
+
+    .hero h2 span {
+      color: #38bdf8;
+    }
+
+    .hero p {
+      margin-top: 15px;
+      font-size: 20px;
+      color: #cbd5e1;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    /* About Section */
+    .about {
+      padding: 80px 10%;
+      background: #1e293b;
+      display: flex;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about img {
+      width: 300px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(56, 189, 248, 0.6);
+      transition: transform 0.3s;
+    }
+
+    .about img:hover {
+      transform: scale(1.05);
+    }
+
+    .about-text {
+      max-width: 600px;
+    }
+
+    .about-text h3 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .about-text p {
+      color: #cbd5e1;
+    }
+
+    /* Projects Section */
+    .projects {
+      padding: 80px 10%;
+      background: #0f172a;
+      text-align: center;
+    }
+
+    .projects h3 {
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(56, 189, 248, 0.5);
+    }
+
+    .card h4 {
+      margin-bottom: 10px;
+      color: #38bdf8;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #cbd5e1;
+    }
+
+    /* Contact */
+    .contact {
+      padding: 80px 10%;
+      background: #1e293b;
+      text-align: center;
+    }
+
+    .contact h3 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      border-radius: 8px;
+      background: #38bdf8;
+      color: #0f172a;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .contact a:hover {
+      background: #0ea5e9;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0f172a;
+      font-size: 14px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <h1>MyPortfolio</h1>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <h2>Hello, I'm <span>Mouni Varshitha Dommeti </span></h2>
+    <p>Aspiring Full Stack Developer & Designer</p>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <img src="mouni.jpg" alt="Profile Picture">
+    <div class="about-text">
+      <h3>About Me</h3>
+      <p>
+        I'm passionate about creating interactive and responsive websites. 
+        I specialize in building clean and modern web applications using HTML, CSS, and JavaScript.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <h3>My Projects</h3>
+    <div class="project-grid">
+      <div class="card">
+        <h4>Portfolio Website</h4>
+        <p>A responsive portfolio website built with modern html and CSS.</p>
+        <a href="html task/homepage.html" target="_blank">view project</a>
+      </div>
+      <div class="card">
+        <h4>Blog Platform</h4>
+        <p>A blogging platform with clean layout and user-friendly design.</p>
+      </div>
+      <div class="card">
+        <h4>eCommerce Store</h4>
+        <p>An online store with shopping cart and product filtering features.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h3>Contact Me</h3>
+    <a href="mailto:mounidommeti089@gmail.com">Email Me</a>
+    <a href="#mouni-dommeti-98584227">LinkedIn</a>
+    <a href="#https://github.com/MouniVarshitha">GitHub</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 MyPortfolio. All rights reserved.</p>
+  </footer>
+</body>
+</html>

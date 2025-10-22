@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alphabet Range (skip h)</title>
+</head>
+<body>
+  <script>
+    // Take starting and ending alphabets
+    let start = prompt("Enter the starting alphabet:").toLowerCase();
+    let end = prompt("Enter the ending alphabet:").toLowerCase();
+
+    // Convert to ASCII values
+    let startCode = start.charCodeAt(0);
+    let endCode = end.charCodeAt(0);
+
+    let output = "";
+
+    // Loop from start to end
+    for (let i = startCode; i <= endCode; i++) {
+      let letter = String.fromCharCode(i);
+      if (letter === "h") {
+        continue; // skip 'h'
+      }
+      output += letter + " ";
+    }
+
+    // Display result
+    document.write("Output: " + output);
+  </script>
+</body>
+</html>
+ 

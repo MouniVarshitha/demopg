@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6 - CSS</title>
+
+    <!-- External CSS (Global Styling) -->
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f8ff;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: darkgreen;
+            font-size: 18px;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            color: red;
+        }
+
+        section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: darkred;
+            text-align: left;
+        }
+    </style>
+
+    <!-- Internal CSS (About Section) -->
+    <style>
+        #about {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-left: 5px solid teal;
+        }
+        #about h2 {
+            color: teal;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Inline CSS for Main Heading -->
+    <h1 style="color: darkblue; text-align: center; font-size: 40px;">
+        Welcome to My Webpage
+    </h1>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#about">About</a> |
+        <a href="#project">Project</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Sections -->
+    <section id="home">
+        <h2>Home</h2>
+        <p>This is the Home section of the website.</p>
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>I am learning HTML and CSS. This section is styled using internal CSS.</p>
+    </section>
+
+    <section id="project">
+        <h2>Project</h2>
+        <p>Here are some of my projects displayed.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can reach me at <b>example@email.com</b>.</p>
+    </section>
+
+</body>
+</html>

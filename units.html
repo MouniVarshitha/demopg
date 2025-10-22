@@ -1,0 +1,59 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title> CSS Units</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .boxes {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      background: #f0f0f0;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .px300 {
+      width: 300px;    
+    }
+    .percent50 {
+      width: 50%;      
+    }
+    .ch30 {
+      width: 30ch;     
+    }
+  </style>
+</head>
+<body>
+  <h1> CSS Units</h1>
+
+  <div class="boxes">
+    <div class="box px300">
+      <strong>Box 1</strong>
+      <p>Width: 300px (absolute)</p>
+    </div>
+
+    <div class="box percent50">
+      <strong>Box 2</strong>
+      <p>Width: 50% (relative)</p>
+    </div>
+
+    <div class="box ch30">
+      <strong>Box 3</strong>
+      <p>Width: 30ch (character-based)</p>
+    </div>
+  </div>
+</body>
+</html>
+

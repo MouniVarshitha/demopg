@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>child and adjacent</title>
+    <style>
+        ul > li :first-child {
+            color: black;
+            font-weight: bold;
+        }
+        li + li {
+            color: blue;
+        }
+        li ~ li {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Departments</li>
+        <ul>
+    <li>ECE</li>
+    <li>CSE</li>
+    <li>EEE</li>
+    <li>civil</li>
+    <li>mech</li>
+    </ul>  
+    </ul>
+    </div>
+</body>
+</html>
